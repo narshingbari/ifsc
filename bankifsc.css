@@ -1,0 +1,66 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+}
+
+.btn {
+    margin: 10px;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+    color: teal;
+}
+
+table,
+th,
+tr,
+td {
+    border: .5px solid #ccc;
+    padding: 5px;
+}
+
+.errorMsg {
+    font-size: 1.2rem;
+}
+
+.hideAni {
+    -webkit-animation: moveout .3s;
+    /* Safari 4.0 - 8.0 */
+    animation: moveout .3s;
+}
+
+.ShowAni {
+    -webkit-animation: movein .3s;
+    /* Safari 4.0 - 8.0 */
+    animation: movein .3s;
+}
+
+@keyframes moveout {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes movein {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+        display: block;
+    }
+}
