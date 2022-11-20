@@ -33,20 +33,17 @@
         }
     </script>
     <script>
-        document.addEventListener("keydown", (e) => {
-  // USE THIS TO DISABLE CONTROL AND ALL FUNCTION KEYS
-  // if (e.ctrlKey || (e.keyCode>=112 && e.keyCode<=123)) {
-  // THIS WILL ONLY DISABLE CONTROL AND F12
+      document.addEventListener("keydown", (e) => {
           if (e.ctrlKey || e.keyCode==123) {
-            e.stopPropagation();
-            e.preventDefault();
-        }
-    });
-</script>
-<meta charset="UTF-8">
-<title>Narshingbari All Bank IFSC Details Finder</title>
-<link rel="icon" type="image/png" sizes="32x32" href="https://i.postimg.cc/28jQnDHs/Icon-16-by-16.jpg">
-<style>
+              e.stopPropagation();
+              e.preventDefault();
+          }
+      });
+  </script>
+  <meta charset="UTF-8">
+  <title>Narshingbari All Bank IFSC Details Finder</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="https://i.postimg.cc/28jQnDHs/Icon-16-by-16.jpg">
+  <style>
     .footer {
         position: fixed;
         left: 0;
