@@ -21,38 +21,49 @@
     </script>
     <script type="text/JavaScript">
         function killCopy(e){
-        return false
-    }
-    function reEnable(){
-        return true
-    }
-    document.onselectstart=new Function ("return false")
-    if (window.sidebar){
-        document.onmousedown=killCopy
-        document.onclick=reEnable
-    }
-</script>
-    <meta charset="UTF-8">
-    <title>Narshingbari All Bank IFSC Details Finder</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="https://i.postimg.cc/28jQnDHs/Icon-16-by-16.jpg">
-    <style>
-        .footer {
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            background-color: green;
-            color: white;
-            text-align: center;
+            return false
         }
-    </style>
-    <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
-    <link rel='stylesheet' href='./materialize.min.css'>
-    <link rel="stylesheet" href="./bankifsc.css">
-    <meta property="og:title" content="Narshingbari All Bank IFSC Details Finder">
-    <meta property="og:description" content="In Narshingbari website Type IFSC code to Know Branch Details of any Bank in India Find IFSC, MICR Codes, Address , All Bank Branches in India.">
-    <meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109' />
-    <meta name='google-adsense-platform-domain' content='blogspot.com' />
+        function reEnable(){
+            return true
+        }
+        document.onselectstart=new Function ("return false")
+        if (window.sidebar){
+            document.onmousedown=killCopy
+            document.onclick=reEnable
+        }
+    </script>
+    <script>
+        document.addEventListener("keydown", (e) => {
+  // USE THIS TO DISABLE CONTROL AND ALL FUNCTION KEYS
+  // if (e.ctrlKey || (e.keyCode>=112 && e.keyCode<=123)) {
+  // THIS WILL ONLY DISABLE CONTROL AND F12
+          if (e.ctrlKey || e.keyCode==123) {
+            e.stopPropagation();
+            e.preventDefault();
+        }
+    });
+</script>
+<meta charset="UTF-8">
+<title>Narshingbari All Bank IFSC Details Finder</title>
+<link rel="icon" type="image/png" sizes="32x32" href="https://i.postimg.cc/28jQnDHs/Icon-16-by-16.jpg">
+<style>
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: green;
+        color: white;
+        text-align: center;
+    }
+</style>
+<link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+<link rel='stylesheet' href='./materialize.min.css'>
+<link rel="stylesheet" href="./bankifsc.css">
+<meta property="og:title" content="Narshingbari All Bank IFSC Details Finder">
+<meta property="og:description" content="In Narshingbari website Type IFSC code to Know Branch Details of any Bank in India Find IFSC, MICR Codes, Address , All Bank Branches in India.">
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109' />
+<meta name='google-adsense-platform-domain' content='blogspot.com' />
 </head>
 
 <body>
